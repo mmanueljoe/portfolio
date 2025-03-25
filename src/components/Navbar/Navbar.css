@@ -1,0 +1,130 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.logo{
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.nav-links{
+    display: flex;
+    font-size: 0.8rem;
+    gap: 1rem;
+    background: var(--navbar-bg);
+}
+
+.nav-links ol{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links ol li a{
+    text-decoration: none;
+    color: var(--text);
+}
+
+.resume-container{
+    padding: 0.8rem 1rem;
+    border: 0.5px solid var(--text);
+}
+
+.resume-link{
+    text-decoration: none;
+}
+
+
+.nav-hamburger{
+    border: none;
+    background: none;
+    display: none;
+}
+
+.nav-hamburger-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.hamburger-line{
+    height: 2px;
+    background-color: var(--text);
+    transition: transform 0.3s ease,opacity 0.3s ease, width 0.3s ease;
+}
+
+.hamburger-line:nth-child(1){
+    width: 30px;
+}
+
+.hamburger-line:nth-child(2){
+    width: 22px;
+}
+
+.hamburger-line:nth-child(3){
+    width: 15px;
+}
+
+/* animation when hamburger is active */
+.nav-hamburger-container.active .hamburger-line:nth-child(1){
+    transform: translateY(7px) rotate(45deg);
+    width: 30px;
+}
+
+.nav-hamburger-container.active .hamburger-line:nth-child(2){
+    opacity: 0;
+}
+
+.nav-hamburger-container.active .hamburger-line:nth-child(3){
+    transform: translateY(-7px) rotate(-45deg);
+    width: 30px;
+}
+
+
+@media only screen and (max-width: 768px){
+    .nav-links{
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 55%;
+        height: 100vh;
+        background-color: var(--background);
+    }
+
+    .nav-links ol{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .nav-links.open{
+        display: flex;
+    }
+    
+    .nav-hamburger{
+        display: flex;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+}

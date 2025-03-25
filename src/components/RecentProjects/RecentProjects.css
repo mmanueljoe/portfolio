@@ -1,0 +1,138 @@
+.recent-projects {
+  padding: 6rem 2rem;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.recent-projects-header h1 {
+  font-size: var(--fs-h1);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.recent-projects-header p {
+  font-size: var(--fs-small);
+  color: var(--text);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 900px;
+  width: 100%;
+  /* border: 0.5px solid var(--border-color); */
+  box-shadow: 0 1px 4px var(--border-color);
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-category {
+  /* display: inline-block; */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  width: 20%;
+}
+
+.project-category.web3 {
+  background-color: #ff4b2b;
+}
+
+.project-category.frontend {
+  background-color: #007acc;
+}
+
+.project-info h2 {
+  font-size: var(--fs-large);
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: var(--fs-small);
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.tech-stack {
+  display: flex;
+  gap: 10px;
+  font-size: var(--fs-small);
+  margin-bottom: 10px;
+}
+
+.tech-stack span {
+  color: #ff4b2b;
+}
+
+.project-links {
+  display: flex;
+  gap: 15px;
+}
+
+.project-links a {
+  color: #ff4b2b;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: var(--fs-small);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.project-card.left {
+  flex-direction: row;
+}
+
+.project-card.right {
+  flex-direction: row-reverse;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .project-info {
+    width: 100%;
+  }
+}

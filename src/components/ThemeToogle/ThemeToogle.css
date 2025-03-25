@@ -1,0 +1,16 @@
+/* Theme toggle styles */
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+  }
+  
+  .icon {
+    color: var(--text); /* Icon color matches text */
+    transition: color 0.3s ease;
+  }
+  
+  .theme-toggle:hover .icon {
+    color: var(--accent); /* Hover effect using accent color */
+  }
