@@ -23,17 +23,17 @@
     display: flex;
     font-size: 0.8rem;
     gap: 1rem;
-    background: var(--navbar-bg);
 }
 
-.nav-links ol{
+.nav-links ul{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 2rem;
+    list-style: none;
 }
 
-.nav-links ol li a{
+.nav-links ul li a{
     text-decoration: none;
     color: var(--text);
 }
@@ -110,7 +110,7 @@
         background-color: var(--background);
     }
 
-    .nav-links ol{
+    .nav-links ul{
         flex-direction: column;
         gap: 2rem;
     }

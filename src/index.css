@@ -7,6 +7,8 @@
   --primary: #007bff;
   --secondary: #7b7b7b;
   --navbar-bg: #010102;
+  --bg-btn: #000000;
+  --bg-text: #ffffff;
 
   --border-color: #212123;
 
@@ -31,7 +33,7 @@
   --fs-h2: 2rem; /* 32px */
   --fs-h1: 2.5rem; /* 40px */
   --hero-h1: 3rem; /* 48px */
-  --hero-name: 7rem; /* 96px */
+  --hero-name: 6rem; /* 96px */
 }
 
 [data-theme="dark"] {
@@ -42,6 +44,8 @@
   --secondary: #030711;
   --tertiary: #1a1a1a;
   --border-color: #cecece;
+  --bg-btn: #ffffff;
+  --bg-text: #000000;
 }
 
 *{

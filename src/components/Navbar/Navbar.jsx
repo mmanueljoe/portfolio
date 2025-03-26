@@ -2,6 +2,7 @@ import React from 'react'
 import ThemeToogle from '../ThemeToogle/ThemeToogle';
 import './Navbar.css';
 import { Link } from "react-router-dom";
+import { LuArrowRight } from "react-icons/lu";
 import { useState } from 'react';
 
 const Navbar = () => {
@@ -21,21 +22,24 @@ const Navbar = () => {
               simplyjoe
             </Link>
           </div>
-          <ThemeToogle />
+          
           <div className={`nav-links ${menuOpen? 'open' : ''}`}>
-            <ol>
+            <ul>
               <li><Link to="">About</Link></li>
               <li><Link to="">Experience</Link> </li>
               <li><Link to="">Projects</Link> </li>
+              <li><Link to="">Blog</Link> </li>
               <li><Link to="">Contact</Link> </li>
-            </ol>
+            </ul>
             <div className='resume-container'>
             <Link className='resume-link'>
                 Resume
-              </Link>
+            </Link>
             </div>
+            {/* <button className="contact-btn">Contact Now <LuArrowRight className='contact-right-arrow'/></button> */}
           </div>
-
+          <ThemeToogle />
+          
           <div className='nav-hamburger' onClick={toggleMenu}>
             <div className={`nav-hamburger-container ${menuOpen ? 'active' : ''}`}>
               <div className='hamburger-line'></div>

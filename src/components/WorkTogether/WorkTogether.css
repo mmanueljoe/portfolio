@@ -1,0 +1,84 @@
+#work-together {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text);
+    padding: 4rem 2rem;
+    margin: 3rem auto;
+    max-width: 1240px;
+    z-index: 2;
+}
+
+.work-container h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.work-container p {
+    font-size: var(--fs-verysmall);
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    opacity: 0.9;
+}
+
+.contact-btn {
+    background: var(--bg-btn);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-text);
+    padding: 0.8rem 1.5rem;
+    font-size: var(--fs-small);
+    font-family: var(--font-body);
+    font-weight: 600;
+    border: none;
+    border-radius: 70px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    margin: 0 auto;
+}
+
+.contact-right-arrow{
+    margin-left: 0.5rem;
+    color: var(--bg-text);
+    font-size: var(--fs-regular);
+}
+
+.contact-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .work-container h1 {
+        font-size: var(--fs-h1);
+    }
+
+    .work-container p {
+        font-size: var(--fs-verysmall);
+    }
+
+    .contact-btn {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .work-container h1 {
+        font-size: var(--fs-h1);
+    }
+
+    .work-container p {
+        font-size: var(--fs-small);
+    }
+
+    .contact-btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+}

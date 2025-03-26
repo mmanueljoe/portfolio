@@ -2,6 +2,7 @@
 #best-services {
     padding: 2rem 2rem;
     background: var(--background);
+    z-index: 2;
 }
 
 .best-services-header {
@@ -28,20 +29,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    padding: 0 2rem;
 }
 
 /* Service Card */
 .service-card {
     background: var(--background);
-    padding: 30px;
+    padding: 1rem;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left;
-    display: flex;
-    align-items: center;
     gap: 1rem;
-    box-shadow: 0 1px 4px var(--border-color);
+    box-shadow: 0 1px 1px var(--border-color);
 }
 
 .service-card:hover {
@@ -57,7 +55,7 @@
 
 /* Service Info */
 .service-info h3 {
-    font-size: var(--fs-h2);
+    font-size: var(--fs-h3);
     font-weight: 600;
     color: var(--text);
     margin-bottom: 0.5rem;
@@ -74,10 +72,17 @@
     .services-container {
         grid-template-columns: 1fr 1fr;
     }
+
+
 }
 
 @media only screen and (max-width: 480px) {
     .services-container {
         grid-template-columns: 1fr;
+        padding: 0 1rem;
     }
+
+    /* .service-card{
+
+    } */
 }
